@@ -12,29 +12,6 @@ class SalesService extends DatabaseService<ISales, ISalesDoc> {
     super(model);
   }
 
-  public getIngredientOptions = async (text: string) => {
-    return await this.model.aggregate([
-      {
-        $unwind: {
-          path: "$ingredients",
-        },
-      },
-      {
-        $group: {
-          _id: "$ingredients",
-        },
-      },
-      {
-        $match: {
-          _id: new RegExp(text, "i"),
-        },
-      },
-      {
-        $limit: 10,
-      },
-    ]);
-  };
-
   // foods that we can make from a given ingredients set
   public getSalesReports = async (statsType: StatsType) => {
     const date = new Date(new Date().toUTCString());
