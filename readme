@@ -1,0 +1,22 @@
+There are three steps to run this app
+
+Step 1: install dependencies using follwing command
+npm install
+
+Step 2: provide environment variable using .env file. please refer .env.example file
+
+Step 2: build the application using
+npm run build
+
+Step 3: run the application using follwing command
+npm start
+
+###########################################################################################
+
+You can generate random data for testing using "/generate_randomData" endpoint.
+
+You can use "/sales/reports" endopint to get the sales report. you have to pass either "daily" or "monthly" statsType in query param.
+e.g. "/sales/reports?statsType=monthly" to get date wise sales amount for the current month.
+or "/sales/reports?statsType=daily" to get hourly sales amount for the current day
+
+Note: All the dates stored are in the UTC timezone
