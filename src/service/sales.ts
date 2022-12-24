@@ -73,7 +73,7 @@ class SalesService extends DatabaseService<ISales, ISalesDoc> {
         },
         {
           $project: {
-            hour: "$_id",
+            date: "$_id",
             totalSaleAmount: 1,
             _id: 0,
           },
