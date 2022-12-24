@@ -13,10 +13,8 @@ npm start
 
 ###########################################################################################
 
-You can generate random data for testing using "/generate_randomData" endpoint.
+# You can generate random data for testing using "/generate_randomData" endpoint.
 
-You can use "/sales/reports" endopint to get the sales report. you have to pass either "daily" or "monthly" statsType in query param.
-e.g. "/sales/reports?statsType=monthly" to get date wise sales amount for the current month.
-or "/sales/reports?statsType=daily" to get hourly sales amount for the current day
+# You can use "/sales/reports" endopint to get the sales report. you have to pass either "daily" or "monthly" statsType in query param. e.g. "/sales/reports?statsType=monthly" to get date wise sales amount for the current month. or "/sales/reports?statsType=daily" to get hourly sales amount for the current day
 
 Note: All the dates stored are in the UTC timezone
